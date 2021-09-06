@@ -17,13 +17,6 @@ A discord bot that sends messages to a channel whenever a specific user tweets u
 - [Contributing](#contributing)
 - [License](#license)
 
-## Support
-Join my Masta Coders Discord server and come join a community of coders, investors and thinkers come join!
-[![CodeLife Join button](https://i.imgur.com/407brBK.png)](https://discord.gg/DMbMmQvvQh)
-
-[You can also support me  via Patreon](http://patreon.com/qdot)!
-Every donation helps us afford more time to create projects and classes for underserved youth!
-
 ## Installation
 
 Use the package manager [npm](https://npmjs.org) to install the dependencies. Then copy the example .env file and fill in with appropriate values.
@@ -33,8 +26,6 @@ Use the package manager [npm](https://npmjs.org) to install the dependencies. Th
  npm install
  cp .env.example .env
  #set values for TWITTER and DISCORD APIs in .env
-
-
 
 ```
 
