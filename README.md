@@ -1,44 +1,22 @@
-[![Patreon donate button](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/mastashake08)
-[![npm](https://img.shields.io/npm/v/buttplug.svg)](https://npmjs.com/package/discord-twitter-bot)
-[![Discord](https://img.shields.io/badge/Discord-Join%20My%20Server-blue)](https://discord.gg/DMbMmQvvQh)
-[![CodeLife](https://img.shields.io/badge/Code%20Life-Join%20The%20Team-brightgreen)](https://bit.ly/30vZro9)
-
 # Discord Twitter Bot
 
-A discord bot that sends messages to a channel whenever a specific user tweets using the Twitter Streaming API. Uses the Twit and Discord.js NPM packages
-
-
-## Table Of Contents
-
-- [Support The Project](#support)
-- [Installation](#installation)
-
-- [Usage Example](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+A discord bot that sends messages to a channel whenever a specific user tweets using the Twitter Streaming API. Uses the Twit and Discord.js NPM packages.
 
 ## Installation
 
-Use the package manager [npm](https://npmjs.org) to install the dependencies. Then copy the example .env file and fill in with appropriate values.
+### Local
+1. Copy files into the VPS using command: `git clone https://github.com/Mbarmem/MoTwitterBot.git`
+2. Add apt sources list for Nodejs 16 repo: `curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -`
+3. Install Node.js: `sudo apt -y install nodejs`
+4. Run `npm install`
+6. Copy `example.env` to `.env` and edit info.
+7. Run `node main.js`
 
-```bash
- git clone https://github.com/mastashake08/discord-twitter-bot.git
- npm install
- cp .env.example .env
- #set values for TWITTER and DISCORD APIs in .env
+---
 
-```
+### Docker
 
-## Usage
+1. Build the docker image using the command: `docker build -t mbarmem/motwitterbot:latest .`
+2. Push the docker image to repository: `docker image push mbarmem/motwitterbot:latest`
 
-```bash
-node main.js
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[ISC](https://choosealicense.com/licenses/isc/)
+---
