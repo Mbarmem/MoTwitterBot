@@ -1,6 +1,6 @@
 {
-  "name": "discord-twitter-bot",
-  "version": "1.0.0",
+  "name": "mo-discord-twitter-bot",
+  "version": "v1.0.0",
   "description": "A discord bot that sends messages to a channel whenever a specific user tweets.",
   "main": "main.js",
   "scripts": {
@@ -8,19 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mastashake08/discord-twitter-bot.git"
+    "url": "git+https://github.com/Mbarmem/MoTwitterBot.git"
   },
   "keywords": [
     "discord",
     "twitter",
     "bot"
   ],
-  "author": "mastashake08",
+  "author": "mbarmem",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mastashake08/discord-twitter-bot/issues"
-  },
-  "homepage": "https://github.com/mastashake08/discord-twitter-bot#readme",
   "dependencies": {
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
