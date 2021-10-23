@@ -14,6 +14,10 @@ var T = new Twit({
 })
 client.login(process.env.DISCORD_TOKEN);
 
+console.log("-------------------------------------");
+console.log("          Mo's Twitter Bot           ");
+console.log("-------------------------------------");
+
 client.on('ready', () =>  {
   console.log(`[INFO]: Ready on client (${client.user.tag})`);
   console.log(
@@ -21,8 +25,6 @@ client.on('ready', () =>  {
       client.channels.cache.size
     } channels & ${client.users.cache.size} users`
   );
-  console.log("-------------------------------------");
-  console.log("           Mo's Twitter Bot          ");
   console.log("-------------------------------------");
   client.user.setActivity('Tweets', {
     type: 'WATCHING'
