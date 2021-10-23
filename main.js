@@ -13,8 +13,20 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
 client.login(process.env.DISCORD_TOKEN);
-client.once('ready', () =>
-  {
+
+client.on('ready', () =>  {
+  console.log(`[INFO]: Ready on client (${client.user.tag})`);
+  console.log(
+    `[INFO]: watching ${client.guilds.cache.size} Servers, ${
+      client.channels.cache.size
+    } channels & ${client.users.cache.size} users`
+  );
+  console.log("-------------------------------------");
+  console.log("           Mo's Twitter Bot          ");
+  console.log("-------------------------------------");
+  client.user.setActivity('Tweets', {
+    type: 'WATCHING'
+  });
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID1] })
 
   stream.on('tweet', function (tweet) {
@@ -32,10 +44,6 @@ client.once('ready', () =>
       }
     }
   })
-  }
-)
-client.once('ready', () =>
-  {
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID2] })
 
   stream.on('tweet', function (tweet) {
@@ -53,10 +61,6 @@ client.once('ready', () =>
       }
     }
   })
-  }
-)
-client.once('ready', () =>
-  {
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID3] })
 
   stream.on('tweet', function (tweet) {
@@ -74,10 +78,6 @@ client.once('ready', () =>
       }
     }
   })
-  }
-)
-client.once('ready', () =>
-  {
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID4] })
 
   stream.on('tweet', function (tweet) {
@@ -95,10 +95,6 @@ client.once('ready', () =>
       }
     }
   })
-  }
-)
-client.once('ready', () =>
-  {
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID5] })
 
   stream.on('tweet', function (tweet) {
@@ -116,10 +112,6 @@ client.once('ready', () =>
       }
     }
   })
-  }
-)
-client.once('ready', () =>
-  {
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID6] })
 
   stream.on('tweet', function (tweet) {
@@ -137,10 +129,6 @@ client.once('ready', () =>
       }
     }
   })
-  }
-)
-client.once('ready', () =>
-  {
   var stream = T.stream('statuses/filter', { follow: [process.env.TWITTER_USER_ID7] })
 
   stream.on('tweet', function (tweet) {
